@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot com Busca na Web e Tradução</title>
+
+    <!-- Arquivo de Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scripts externos CDN: TensorFlow, Math.js e outras dependências -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.1/math.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0"></script>
+
+    <!-- Preload para módulos externos (carregamento otimizado) -->
+    <link rel="modulepreload" href="https://cdn.oaistatic.com/assets/ijcgn2f75d1cqwoh.js">
+    <link rel="modulepreload" href="https://cdn.oaistatic.com/assets/mippet6rdve1khf5.js">
+    
+    <!-- Incluindo mais preloads, se necessário -->
+    <!-- Lembre-se de não exagerar com muitos 'modulepreload', pois isso pode afetar o desempenho -->
+</head>
+<body>
+    <!-- Container do chat -->
+    <div id="chat-container"></div>
+
+    <!-- Input do usuário -->
+    <div id="input-container">
+        <input type="text" id="user-input" placeholder="Digite sua pergunta..."
+        input id="user-input" type="text" maxlength="5000" placeholder="Digite sua mensagem (máximo 5000 caracteres)"/>
+
+        <button id="send-button">Enviar</button>
+    </div>
+
+    <!-- Seus scripts JavaScript personalizados -->
+
+    <!-- Carga assíncrona e otimizada dos scripts -->
+    <script defer src="script.js"></script> <!-- Lógica principal do chatbot -->
+    <script defer src="neural.js"></script> <!-- Funções neurais -->
+    <script defer src="tensorModel.js"></script> <!-- Modelos de TensorFlow -->
+    <script defer src="chatbot.js"></script> <!-- Comportamento do chatbot -->
+    
+
+
+    <!-- Arquivo CDN personalizado -->
+    <script defer src="cdn.js"></script>
+
+    <!-- Script para carregar APIs -->
+    <script type="module" src="api.js"></script>
+</body>
+</html>
